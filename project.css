@@ -1,0 +1,142 @@
+*{
+    background-color: black;
+}
+.head{
+    background-color: black;
+    color: rgb(252, 165, 165);
+    text-align: center; 
+    border: 3px solid red;
+   
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 15px;
+}
+
+.divImg{
+   justify-content: center;
+   
+    
+}
+
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  10px;
+    transition: transform 0.3s;
+   
+    background-color: black;
+
+}
+
+
+.car img{
+    display: block;
+    justify-self: center;
+    border: 2px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 250px;
+    max-height: 130px;
+    margin: 10px;
+    border-radius: 0px 10px 0px 10px;
+    animation: select 1.2s infinite alternate;
+    animation-play-state: paused;
+    transition: transform 0.3s;
+    
+}
+.car:hover{
+    transform: scale(1.1);
+     box-shadow:0 0 15px gray;
+      border-radius: 0px 20px 0px 20px;
+}
+.car img:hover{
+    animation-play-state: running;
+}
+@keyframes select {
+    
+    0%{border:3px solid #bafc06;}
+    25%{border:3px solid rgb(30, 255, 0); }
+    50%{border: 3px solid rgb(0, 255, 183);}
+    75%{border:3px solid rgb(10, 122, 241);}
+    100%{border:3px solid rgb(0, 0, 255)}
+  
+}
+button
+{
+    background-color: white;
+}
+.matter{
+    display: block;
+    background-color:rgba(255, 255, 255, 0) ;
+    text-align: center;
+    color: rgb(63, 250, 6);
+}
+.car button
+{
+    background-color: rgb(255, 255, 255);
+    animation: but 1s infinite alternate;
+    animation-play-state: paused;
+}
+button:hover{
+   animation-play-state: running;
+}
+@keyframes but {
+    0%{border:3px solid #06e3fc;}
+    50%{border:3px solid rgb(34, 0, 255); }
+    100%{border: 3px solid rgb(0, 255, 183);} 
+}
+   @media(max-width:768px)
+   {
+   .Grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+    }
+
+   
+.mainimg{
+    display: flex;
+    margin-top:20px;
+    border: 2px solid rgb(0, 0, 0);
+    justify-content: center;
+}
+.flexbox{
+    margin: auto;
+   text-align: left;
+}
+.mainimg img{
+    max-height: 256px;
+    max-width: 512px;
+    border: 2px solid rgb(210, 10, 10);
+    border-radius: 10px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: sele 1.3s infinite running;
+}
+@keyframes sele {
+    0%{border:3px solid #bafc06;}
+    25%{border:3px solid rgb(30, 255, 0); }
+    50%{border: 3px solid rgb(0, 255, 183);}
+    75%{border:3px solid rgb(10, 122, 241);}
+    100%{border:3px solid rgb(0, 0, 255)}
+  
+}
+.mainimg button{
+    background-color:rgb(185, 28, 28);
+    
+}
+.matterD{
+    display: flex;
+    padding: 10px;
+    display: block;
+    justify-items: center;
+    flex-direction: dow;
+}
+
