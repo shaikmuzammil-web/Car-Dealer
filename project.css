@@ -135,8 +135,9 @@ button:hover{
 .matterD{
     display: flex;
     padding: 10px;
-    display: block;
+    margin-left:30px;
     justify-items: center;
     flex-direction: dow;
 }
+
 
