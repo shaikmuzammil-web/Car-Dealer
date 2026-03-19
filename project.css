@@ -110,6 +110,14 @@ button:hover{
     margin: auto;
    text-align: left;
 }
+.flexbox button{
+    transition: transform 0.3s;
+}
+.flexbox button:hover{
+    background-color: #06e3fc;
+    transform: scale(1.1);
+    border: 2px solid white;
+}
 .mainimg img{
     max-height: 256px;
     max-width: 512px;
